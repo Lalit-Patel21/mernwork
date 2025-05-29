@@ -1,0 +1,23 @@
+<script>
+  const operation = (val) => {
+    return new Promise((resolve, reject) => {
+      //   throw new Error("Testing Catch....");
+      val % 2 ? reject("Given number is odd") : resolve("Given number is even");
+    });
+  };
+  // operation(10)
+  // .then((resolvedValue)=>{
+  //     console.log("First callback....");
+  //     console.log(resolvedValue)
+  // },(rejectValue)=>{
+  //   console.log("Second callback....");
+  //   console.log(rejectValue);
+  // })
+  operation(11)
+    .then((resolvedResult) => {
+      console.log(resolvedResult);
+    })
+    .catch((rejectedResult) => {
+      console.log(rejectedResult);
+    });
+</script>

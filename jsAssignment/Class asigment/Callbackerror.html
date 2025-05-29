@@ -1,0 +1,21 @@
+<script>
+  function operation(a, b, callback) {
+    if (typeof a != "number" || typeof b != "number")
+      callback(new Error("invalid input[only numbers are allowed]"));
+    else {
+      let result = a + b;
+      console.log("Addition : " + result); //24
+      callback(0, result);
+      console.log("after callback");
+    }
+  }
+  var callbackerr = function (err, result) {
+    if (err) {
+      console.log(err); //24
+      // console.log(result);
+    } else result % 2 ? console.log("Odd") : console.log("Even");
+  };
+  operation("a", 10, callbackerr);
+</script>
+<!-- falsy vlues
+null undefined 0  -->

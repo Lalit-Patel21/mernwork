@@ -1,0 +1,30 @@
+<script>
+  /*
+      class Promise{
+        constructor(para){
+
+        }
+
+        then(){
+            return promise-object;
+        }
+        catch(){
+            return promise-object;
+        }
+      }
+    */
+  let p = new Promise((resolve, reject) => {
+    resolve();
+    // reject();
+  });
+
+  p.then(() => {
+    console.log("Promise is fullfilled/resolved");
+  })
+    .catch(() => {
+      console.log("Promise is rejected");
+    })
+    .finally(() => {
+      console.log("finally executed...| Promise settled");
+    });
+</script>

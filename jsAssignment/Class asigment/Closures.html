@@ -1,0 +1,74 @@
+<script>
+  // global execution context
+
+  // var n = 2;
+  // function square(n) {
+  //   var ans = n * n;
+  //   return ans;
+  // }
+  // var square1 = square(n);
+  // var square2 = square(4);
+
+  // lexical environment(Scoped)
+  // function a() {
+  //   console.log(b);//10;
+  // }
+  // var b = 10;
+  // a();
+
+  //
+
+  function a() {
+    var b = 10;
+    c();
+    function c() {
+      console.log(b);
+    }
+  }
+  a();
+
+  // function x() {
+  //   var a = 7;
+  //   function y() {
+  //     console.log(a);
+  //   }
+  //   y();
+  // }
+  // x();
+
+  //  function x() {
+  //     var a = 7;
+  //     function y() {
+  //       console.log(a);
+  //     }
+  //     return y;
+  //   }
+  //   var z = x();
+  //   // console.log(z);
+  //   // .....
+  //  z();
+
+  //  function x() {
+  //     var a = 7;
+  //      return function y() {
+  //       console.log(a);
+  //     }
+  //   }
+  //   var z = x();
+  //   // console.log(z);
+  //   // .....
+  //    z();
+
+  //  function x() {
+  //     var a = 7;
+  //     function y() {
+  //       console.log(a);
+  //     }
+  //  a=100;
+  //     return y;
+  //   }
+  //   var z = x();
+  //   // console.log(z);
+  //   // .....
+  //   z();
+</script>

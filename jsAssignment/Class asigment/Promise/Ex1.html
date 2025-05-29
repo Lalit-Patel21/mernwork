@@ -1,0 +1,23 @@
+<script>
+  class Test {
+    static data = 100;
+    m1() {
+      console.log("m1-executed..." + Test.data);
+    }
+    m2() {
+      function m4() {
+        console.log("m4-executed....");
+      }
+      m4();
+      console.log("m2-executed...");
+    }
+    static m3() {
+      console.log("m3-executed...." + Test.data);
+    }
+  }
+  let obj = new Test();
+  obj.m1();
+  obj.m2();
+  Test.m3();
+  console.log(Test.data);
+</script>

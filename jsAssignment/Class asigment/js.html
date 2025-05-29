@@ -1,0 +1,62 @@
+<script>
+  var x1 = [10, 20, 30, 40];
+
+  //   document.write("<hr/>");
+  //   document.write( typeof x1);
+  //   document.write("<hr/>");
+  //   document.write(x1);
+
+  //   x1 = JSON.stringify(x1);
+  //    document.write("<hr/>");
+  //   document.write( typeof x1);
+
+  //   document.write("<hr/>");
+  //   document.write(x1);
+  //   var x2 = JSON.parse(x1);
+  //   // JSON.parse(JSON.stringify(x1));
+  //   document.write("<hr/>");
+
+  //   document.write(x2);
+
+  //    var x1= {
+  //          name : "chiku",
+  //          age :  22,
+
+  //  };
+
+  //   document.write("<hr/>");
+  //   document.write( typeof x1);
+  //   document.write("<hr/>");
+  //   document.write(x1);
+
+  //   x1 = JSON.stringify(x1);
+  //    document.write("<hr/>");
+  //   document.write( typeof x1);
+
+  //   document.write("<hr/>");
+  //   document.write(x1);
+  //   var x2 = JSON.parse(x1);
+  //   document.write("<hr/>");
+  //   document.write( typeof x2);
+  //    document.write(x2);
+  //   // JSON.parse(JSON.stringify(x1));
+  //   document.write("<hr/>");
+
+  let promise = new Promise(function (resolve, reject) {
+    const x = "geeksforgeeks";
+    const y = "geeksforgeeks";
+    if (x === y) {
+      resolve();
+    } else {
+      reject();
+    }
+  });
+
+  promise
+    .then(function () {
+      console.log("Success, You are a GEEK");
+    })
+    .catch(function () {
+      console.log("Some error has occurred");
+    });
+</script>
